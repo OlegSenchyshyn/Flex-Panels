@@ -1,3 +1,4 @@
+//grabbing all the panels
 const panels = document.querySelectorAll('.panel');
 
 function toggleOpen() {
@@ -10,5 +11,5 @@ function toggleActive(e) {
   }
 }
 
-panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+panels.forEach(panel => panel.addEventListener('click', toggleOpen)); //take each of the panels, loop over each one of them, listen for a clink on each one of them, run the toggle fuction when it is run
 panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
